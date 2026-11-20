@@ -20,9 +20,9 @@
    <widget class="QGroupBox" name="groupBox_trafico">
     <property name="geometry">
      <rect>
-      <x>550</x>
+      <x>380</x>
       <y>0</y>
-      <width>711</width>
+      <width>881</width>
       <height>201</height>
      </rect>
     </property>
@@ -34,7 +34,7 @@
       <rect>
        <x>19</x>
        <y>29</y>
-       <width>681</width>
+       <width>841</width>
        <height>161</height>
       </rect>
      </property>
@@ -56,9 +56,9 @@
    <widget class="QGroupBox" name="groupBox_perdidas">
     <property name="geometry">
      <rect>
-      <x>550</x>
+      <x>380</x>
       <y>200</y>
-      <width>711</width>
+      <width>881</width>
       <height>201</height>
      </rect>
     </property>
@@ -70,7 +70,7 @@
       <rect>
        <x>20</x>
        <y>30</y>
-       <width>681</width>
+       <width>841</width>
        <height>161</height>
       </rect>
      </property>
@@ -118,7 +118,7 @@
      <property name="geometry">
       <rect>
        <x>40</x>
-       <y>50</y>
+       <y>30</y>
        <width>161</width>
        <height>16</height>
       </rect>
@@ -131,7 +131,7 @@
      <property name="geometry">
       <rect>
        <x>40</x>
-       <y>90</y>
+       <y>70</y>
        <width>161</width>
        <height>16</height>
       </rect>
@@ -144,7 +144,7 @@
      <property name="geometry">
       <rect>
        <x>40</x>
-       <y>130</y>
+       <y>110</y>
        <width>161</width>
        <height>16</height>
       </rect>
@@ -157,30 +157,61 @@
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>50</y>
+       <y>30</y>
        <width>42</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>60</number>
      </property>
     </widget>
     <widget class="QSpinBox" name="spin_umbral_congestion">
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>90</y>
+       <y>70</y>
        <width>42</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
      </property>
     </widget>
     <widget class="QSpinBox" name="spin_umbral_perdidas">
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>130</y>
+       <y>110</y>
        <width>42</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_analizar">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>142</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Analizar</string>
      </property>
     </widget>
    </widget>
@@ -226,7 +257,7 @@
       <x>10</x>
       <y>370</y>
       <width>351</width>
-      <height>201</height>
+      <height>231</height>
      </rect>
     </property>
     <property name="title">
@@ -242,7 +273,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="label_pico">
@@ -255,7 +286,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="label_perdidas">
@@ -268,7 +299,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="label_estado">
@@ -281,7 +312,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="label_9">
@@ -301,9 +332,9 @@
    <widget class="QGroupBox" name="groupBox_interfaces_2">
     <property name="geometry">
      <rect>
-      <x>550</x>
+      <x>380</x>
       <y>410</y>
-      <width>711</width>
+      <width>881</width>
       <height>201</height>
      </rect>
     </property>
@@ -315,7 +346,7 @@
       <rect>
        <x>15</x>
        <y>30</y>
-       <width>681</width>
+       <width>851</width>
        <height>161</height>
       </rect>
      </property>
@@ -369,7 +400,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string>ANÁLISIS</string>
     </property>
     <widget class="QLabel" name="label_analisis">
      <property name="geometry">
@@ -381,7 +412,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="label_perdidas_interfaces">
@@ -394,7 +425,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string/>
      </property>
     </widget>
    </widget>
@@ -408,14 +439,14 @@
      <height>20</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuArchivo">
+   <widget class="QMenu" name="menuArchivo_RF1">
     <property name="title">
      <string>Archivo</string>
     </property>
     <addaction name="actionAbrir_CSV"/>
     <addaction name="actionCerrar_CSV"/>
    </widget>
-   <addaction name="menuArchivo"/>
+   <addaction name="menuArchivo_RF1"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionAbrir_CSV">
